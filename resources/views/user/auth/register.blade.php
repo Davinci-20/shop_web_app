@@ -17,7 +17,7 @@
                     type="text"
                     class="form-control border-1 text-dark"
                     name="name"
-                    placeholder="your name ..."
+                    placeholder="Name ..."
                 />
             </div>
             <div class="form-group">
@@ -25,7 +25,7 @@
                     type="email"
                     class="form-control border-1 text-dark"
                     name="email"
-                    placeholder="your email ..."
+                    placeholder="Email ..."
                 />
             </div>
             <div class="form-group">

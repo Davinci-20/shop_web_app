@@ -13,8 +13,8 @@ slug name
 
 product Table
 
-category_id   slug  name  image   description   price   view_count()
-
+category_id   slug  name  image  description   price   view_count()
+ 
 
 
 product_cart Table

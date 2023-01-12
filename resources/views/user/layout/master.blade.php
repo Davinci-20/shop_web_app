@@ -104,17 +104,20 @@
 							<small class="badge badge-danger">{{ $cart_count }}</small>
 						</a>
 					</li>
-					@endif
-					<li class="nav-item">
+
+					@else
+	<li class="nav-item">
 						<a class="nav-link " href="{{ url('/login') }}">
 							Cart
 							<small class="badge badge-danger">{{ $cart_count }}</small>
 						</a>
 					</li>
+					@endif
+				
 					
 				</ul>
 				<form action="{{ url('/search') }}" method="get" class="form-inline">
-					<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search Category" aria-label="Search">
 					<button class="btn btn-sm btn-warning" type="submit">Search</button>
 				</form>
 			</div>
