@@ -11,7 +11,10 @@ use App\Models\User;
 class OrderController extends Controller
 {
     public function pending(){
-        $order=ProductOrder::where('status','pending')->with('user','product')->paginate(10);
+        $order=ProductOrder::where('status','pending')
+        ->with('user','product')
+        ->orderBy('id','DESC')
+        ->paginate(10);
         
         return view('admin.order.index',compact('order'));
     }
@@ -29,7 +32,9 @@ class OrderController extends Controller
                 //return $orders;
                 
         }else{
-                $order=ProductOrder::where('status','complete')->with('user','product')->paginate(4);
+                $order=ProductOrder::where('status','complete')->with('user','product')
+                ->orderBy('id','DESC')
+                ->paginate(4);
         }
         
         

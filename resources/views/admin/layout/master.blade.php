@@ -38,6 +38,7 @@
             type="text/css"
             media="all"
         />
+        <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
     </head>
 
     <body>
@@ -49,9 +50,9 @@
                             <ul class="list-group">
                                 <a>
                                     <li
-                                        class="list-group-item bg-primary text-white"
+                                        class="list-group-item bg-info text-white"
                                     >
-                                        Admin Management
+                                        Admin Panel
                                     </li>
                                 </a>
                                 <a href="{{ url('/admin/') }}">

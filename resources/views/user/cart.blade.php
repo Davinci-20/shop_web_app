@@ -25,9 +25,12 @@
                         />
                     </td>
                     <td>{{ $c->product->price }}</td>
-                    <td>4</td>
+                    <td>
+                        <a href="" class="badge badge-success">+</a>
+                        <a href="" class="badge badge-danger">-</a>
+                    </td>
                     <!-- <td>
-                        <a href="{{ url('/product/delete'.$c->id) }}"
+                        <a href="{{ url('/product/delete'.$c->product->id) }}"
                             ><span class="badge badge-sm badge-danger ml-5">
                                 X</span
                             ></a

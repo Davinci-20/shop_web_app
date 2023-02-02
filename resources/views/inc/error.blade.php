@@ -8,4 +8,8 @@
 
 <div class="alert alert-sm alert-danger">{{ session()->get('delete') }}</div>
 
+@endif @if(session()->has('error'))
+
+<div class="alert alert-sm alert-danger">{{ session()->get('error') }}</div>
+
 @endif

@@ -90,7 +90,7 @@ class PageController extends Controller
         $orders=ProductOrder::where('user_id',Auth::user()->id)
         ->with('product')
         ->where('status','pending')
-        ->get();
+        ->paginate(6);
 
         $status='pending';
 
@@ -101,7 +101,8 @@ class PageController extends Controller
         $orders=ProductOrder::where('user_id',Auth::user()->id)
         ->with('product')
         ->where('status','complete')
-        ->get();
+        ->orderBy('id','DESC')
+        ->paginate(5);
 
         $status='complete';
 

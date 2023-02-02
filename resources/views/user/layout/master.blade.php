@@ -117,7 +117,7 @@
 					
 				</ul>
 				<form action="{{ url('/search') }}" method="get" class="form-inline">
-					<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search Category" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search Product" aria-label="Search">
 					<button class="btn btn-sm btn-warning" type="submit">Search</button>
 				</form>
 			</div>
